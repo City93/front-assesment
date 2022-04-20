@@ -16,8 +16,8 @@ const Post = (props) => {
 
   return (
     <div className="post">
-      <h3 className="postTitle">{randomComment}</h3>
-      <p className="userName">@{randomUser}</p>
+      <h3 className="postTitle">{infoPost.name ? infoPost.name : randomComment}</h3>
+      <p className="userName">@{infoPost.user ? infoPost.user : randomUser}</p>
       <p className="postText"> {infoPost.body}</p>
     </div>
   );

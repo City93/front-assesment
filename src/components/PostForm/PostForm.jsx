@@ -23,8 +23,9 @@ const PostForm = (props) => {
         console.log(res);
         const postDataState = {
           "id" : res.data.id,
-          "title": e.target.title.value,
-          "body": e.target.text.value
+          "name": e.target.title.value,
+          "body": e.target.text.value,
+          "user": 'Christian'
         }
         props.newPostInfo.newPost(postDataState)
       })
