@@ -9,4 +9,4 @@ export const getAllPosts = async () => {
   const response = await fetch(`${API_URL}/posts`);
   const data = await response.json();
   return data;
-}
+};
